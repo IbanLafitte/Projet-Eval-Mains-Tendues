@@ -1,0 +1,755 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------LAPTOP--------------------------------------------------*/
+
+@media screen and (min-width: 1000px) and (min-height: 720px) {
+
+    /*--------------------NAVBAR--------------------*/
+
+    .navbar {
+        background-color: #5CBBFF;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar img {
+        width: 70px;
+        height: 70px;
+        border-radius: 90px;
+        margin-left: 30px;
+    }
+
+    .navbar a {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 20px;
+        flex-grow: 0.3;
+        transition: 0.5s ease;
+    }
+
+    .navbar a:hover {
+        transform: scale(1.2);
+    }
+
+    /*--------------------ACCUEIL--------------------*/
+
+    .accueil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+        background: url('img/fond.png');
+        background-size: cover;
+        margin: 0;
+    }
+
+    .textblock {
+        display: block;
+        width: 70%;
+        max-height: 80%;
+        background-color: rgba(92, 187, 255, 0.6);
+        border-radius: 45px;
+        margin: 0 auto;
+        margin-top: 50% auto;
+    }
+
+    .textblock h1 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 10vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*--------------------CONTAINER 1--------------------*/
+
+    .container1 {
+        display: flex;
+        width: auto;
+        height: 50vh;
+    }
+
+    .illustration {
+        display: flex;
+        width: 50%;
+        height: 50vh;
+        justify-content: left;
+        margin: 0;
+    }
+
+    .illustration img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .aide {
+        display: flex;
+        flex-direction: column;
+        background-color: #5CBBFF;
+        width: 50%;
+        height: 50vh;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .aide h2 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: left;
+        font-size: 3vw;
+        font-weight: 200;
+        margin: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .aide p {
+        max-width: 80%;
+        height: auto;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 1.5vw;
+        font-weight: 200;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /*--------------------CONTAINER 2--------------------*/
+
+    .container2 {
+        display: flex;
+        width: auto;
+        height: 50vh;
+    }
+
+    .phototemoignage {
+        display: flex;
+        width: 50%;
+        height: 50vh;
+        justify-content: right;
+        margin: 0;
+    }
+
+    .phototemoignage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .maison {
+        display: flex;
+        flex-direction: column;
+        background-color: #5CBBFF;
+        width: 50%;
+        height: 50vh;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .maison h2 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: left;
+        font-size: 3vw;
+        font-weight: 200;
+        margin: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .maison p {
+        width: 80%;
+        height: auto;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 1.5vw;
+        font-weight: 200;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /*--------------------TITRE--------------------*/
+
+    .titlebloc3 {
+        display: flex;
+        flex-direction: column;
+        background-color: #8FCFFF;
+        width: auto;
+        height: 40%;
+        margin: 0;
+    }
+
+    .titlebloc3 h2 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .titlebloc3 p {
+        width: auto;
+        height: auto;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 2.5vw;
+        font-weight: 100;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    /*--------------------CONTAINER 3--------------------*/
+
+    .container3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 110vh;
+        max-height: 110vh;
+        background-color: #8FCFFF;
+    }
+
+    /*--------------------BLOC TEMOIGNAGE 1--------------------*/
+
+    .temoignage1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
+        height: 94vh;
+        margin: 20px;
+        background-color: #5CBBFF;
+        border-radius: 45px;
+        transition: 0.5s ease
+    }
+
+    .temoignage1:hover {
+        transform: scale(1.05);
+    }
+
+    .temoignage1 img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 180px;
+    }
+
+    .temoignage1 h3 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .temoignage1 h4 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .temoignage1 p {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.4vw;
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    /*--------------------BLOC TEMOIGNAGE 2--------------------*/
+
+    .temoignage2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
+        height: 94vh;
+        margin: 20px;
+        background-color: #5CBBFF;
+        border-radius: 45px;
+        transition: 0.5s ease;
+    }
+
+    .temoignage2:hover {
+        transform: scale(1.05);
+    }
+
+    .temoignage2 img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 180px;
+    }
+
+    .temoignage2 h3 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .temoignage2 h4 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .temoignage2 p {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.4vw;
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    /*--------------------BLOC TEMOIGNAGE 3--------------------*/
+
+    .temoignage3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
+        height: 94vh;
+        margin: 20px;
+        background-color: #5CBBFF;
+        border-radius: 45px;
+        transition: 0.5s ease;
+    }
+
+    .temoignage3:hover {
+        transform: scale(1.05);
+    }
+
+    .temoignage3 img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 180px;
+    }
+
+    .temoignage3 h3 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .temoignage3 h4 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .temoignage3 p {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.4vw;
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    /*--------------------TITRE--------------------*/
+
+    .titlebloc4 {
+        display: flex;
+        flex-direction: column;
+        background-color: #5CBBFF;
+        width: auto;
+        height: 300px;
+        margin: 0;
+    }
+
+    .titlebloc4 h2 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .titlebloc4 p {
+        width: auto;
+        height: auto;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 2.5vw;
+        font-weight: 100;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /*--------------------CONTAINER 4--------------------*/
+
+    .container4 {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 100vh;
+        background-color: #5CBBFF;
+    }
+
+    /*--------------------BLOC POINT DE COLLECTE--------------------*/
+
+    .pointcollecte {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        max-width: 600px;
+        min-width: 300px;
+        height: auto;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin: 50px;
+        background-color: #8FCFFF;
+        border-radius: 45px;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: 0.5s ease;
+    }
+
+    .pointcollecte:hover {
+        transform: scale(1.05);
+    }
+
+    .pointcollecte img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 180px;
+    }
+
+    .pointcollecte h3 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 200;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .pointcollecte h4 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 200;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pointcollecte p {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.4vw;
+        margin: 20px auto;
+        max-width: 80%;
+    }
+
+    .pointcollecte a {
+        width: 80%;
+        text-decoration: none;
+    }
+
+
+    .pointcollecte button {
+        display: block;
+        width: 80%;
+        height: auto;
+        padding: 10px 0;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        background-color: #5CBBFF;
+        border: none;
+        text-align: center;
+        font-size: 2vw;
+        border-radius: 90px;
+        cursor: pointer;
+        margin: 20px auto;
+        transition: 0.5s ease;
+    }
+
+    button:hover {
+        background-color: #0076ca;
+        transform: scale(1.1);
+    }
+
+    /*--------------------BLOC DON--------------------*/
+
+    .don {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        max-width: 600px;
+        min-width: 300px;
+        height: auto;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin: 50px;
+        background-color: #8FCFFF;
+        border-radius: 45px;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: 0.5s ease;
+    }
+
+    .don:hover {
+        transform: scale(1.05);
+    }
+
+    .don img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 180px;
+    }
+
+    .don h3 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 200;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .don h4 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 200;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .don p {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.4vw;
+        margin: 20px auto;
+        max-width: 80%;
+    }
+
+    .don a {
+        width: 80%;
+        text-decoration: none;
+    }
+
+    .don button {
+        display: block;
+        width: 80%;
+        height: auto;
+        padding: 10px 0;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        background-color: #5CBBFF;
+        border: none;
+        text-align: center;
+        font-size: 2vw;
+        border-radius: 90px;
+        cursor: pointer;
+        margin: 20px auto;
+        transition: 0.5s ease;
+    }
+
+    button:hover {
+        background-color: #0076ca;
+        transform: scale(1.1);
+    }
+
+    /*--------------------CONTAINER 5--------------------*/
+
+    .container5 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #8FCFFF;
+    }
+
+    /*--------------------FOIRE AUX QUESTIONS--------------------*/
+
+    .faq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .faq h2 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 6vw;
+        font-weight: 200;
+        margin: 50px 0;
+    }
+
+    .faq h3 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 200;
+        margin: 50px 0;
+
+    }
+
+    .faq p {
+        width: 90%;
+        max-width: 800px;
+        height: auto;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 1.5vw;
+        font-weight: 100;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    /*--------------------FOOTER--------------------*/
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+        background-color: #24a4ff;
+    }
+
+    /*--------------------BLOC 1 FOOTER (GAUCHE)--------------------*/
+
+    .bloc1 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        margin: 0 10px;
+        align-items: center;
+    }
+
+    .bloc1 a {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.4vw;
+        text-decoration: none;
+        margin: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+    /*--------------------BLOC 2 FOOTER (CENTRE)--------------------*/
+
+    .bloc2 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        margin: 0 10px;
+        align-items: center;
+    }
+
+    .bloc2 img {
+        width: 30%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    /*--------------------BLOC 3 FOOTER (DROITE)--------------------*/
+
+    .bloc3 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        align-items: center;
+    }
+
+    .bloc3 p {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.5vw;
+        margin: 10px;
+        width: 80%;
+        height: auto;
+    }
+}

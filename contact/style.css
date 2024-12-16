@@ -1,0 +1,298 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------LAPTOP--------------------------------------------------*/
+
+@media screen and (min-width: 1000px) and (min-height: 720px) {
+
+    /*--------------------NAVBAR--------------------*/
+
+    .navbar {
+        background-color: #5CBBFF;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar img {
+        width: 70px;
+        height: 70px;
+        border-radius: 90px;
+        margin-left: 30px;
+    }
+
+    .navbar a {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 20px;
+        flex-grow: 0.3;
+        transition: 0.5s ease;
+    }
+
+    .navbar a:hover {
+        transform: scale(1.2);
+    }
+
+    /*--------------------ACCUEIL--------------------*/
+
+    .accueil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+        background: url('../img/fond.png');
+        background-size: cover;
+        margin: 0;
+    }
+
+    .textblock {
+        display: block;
+        width: 70%;
+        max-height: 80%;
+        background-color: rgba(92, 187, 255, 0.6);
+        border-radius: 45px;
+        margin: 0 auto;
+        margin-top: 50% auto;
+    }
+
+    .textblock h1 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 10vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*--------------------TITLE BLOC 1--------------------*/
+
+    .titlebloc1 {
+        display: flex;
+        flex-direction: column;
+        background-color: #5CBBFF;
+        width: auto;
+        height: 40%;
+        margin: 0;
+    }
+
+    .titlebloc1 h2 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .titlebloc1 p {
+        width: auto;
+        height: auto;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 2.5vw;
+        font-weight: 100;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /*--------------------CONTAINER 1--------------------*/
+
+    .container1 {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 120vh;
+        background-color: #5CBBFF;
+    }
+
+    /*--------------------FORMULAIRE--------------------*/
+
+    .formulaire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        height: 90%;
+        background-color: #8FCFFF;
+        border-radius: 20px;
+        margin-top: 40px;
+    }
+
+    /*--------------------PRENOM & NOM--------------------*/
+
+    .name input {
+        width: 200px;
+        height: 40px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    /*--------------------EMAIL--------------------*/
+
+    .email input {
+        width: 430px;
+        height: 40px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    /*--------------------MESSAGE--------------------*/
+
+    .message textarea {
+        width: 430px;
+        height: 500px;
+        font-family: "Roboto", sans-serif;
+        background-color: white;
+        color: black;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: left;
+        resize: none;
+        border: none;
+    }
+
+    /*--------------------BOUTON ENVOYER--------------------*/
+
+    .envoyer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 200px;
+        height: 50px;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.4vw;
+        margin: 10px;
+        background-color: #5CBBFF;
+        color: white;
+        border: none;
+        border-radius: 90px;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    
+    .envoyer:hover {
+        background-color: #0076ca;
+        transform: scale(1.1);
+    }
+    
+    .envoyer .buttontext {
+        display: inline-block;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .envoyer .buttontext.hidden {
+        opacity: 0;
+    }
+
+    .envoyer i {
+        font-size: 1.5vw;
+        display: none;
+    }
+    
+    .envoyer .spinner {
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /*--------------------FOOTER--------------------*/
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+        background-color: #24a4ff;
+    }
+
+    /*--------------------BLOC 1 FOOTER (GAUCHE)--------------------*/
+
+    .bloc1 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        margin: 0 10px;
+        align-items: center;
+    }
+
+    .bloc1 a {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.4vw;
+        text-decoration: none;
+        margin: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+    /*--------------------BLOC 2 FOOTER (CENTRE)--------------------*/
+
+    .bloc2 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        margin: 0 10px;
+        align-items: center;
+    }
+
+    .bloc2 img {
+        width: 30%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    /*--------------------BLOC 3 FOOTER (DROITE)--------------------*/
+
+    .bloc3 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        align-items: center;
+    }
+
+    .bloc3 p {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.5vw;
+        margin: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+}

@@ -1,0 +1,380 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------LAPTOP--------------------------------------------------*/
+
+@media screen and (min-width: 1000px) and (min-height: 720px) {
+
+    /*--------------------NAVBAR--------------------*/
+
+    .navbar {
+        background-color: #5CBBFF;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar img {
+        width: 70px;
+        height: 70px;
+        border-radius: 90px;
+        margin-left: 30px;
+    }
+
+    .navbar a {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 20px;
+        flex-grow: 0.3;
+        transition: 0.5s ease;
+    }
+
+    .navbar a:hover {
+        transform: scale(1.2);
+    }
+
+    /*--------------------ACCUEIL--------------------*/
+
+    .accueil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+        background: url('../img/fond.png');
+        background-size: cover;
+        margin: 0;
+    }
+
+    .textblock {
+        display: block;
+        width: 70%;
+        max-height: 80%;
+        background-color: rgba(92, 187, 255, 0.6);
+        border-radius: 45px;
+        margin: 0 auto;
+        margin-top: 50% auto;
+    }
+
+    .textblock h1 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 10vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*--------------------TITLE BLOC 1--------------------*/
+
+    .titlebloc1 {
+        display: flex;
+        flex-direction: column;
+        background-color: #5CBBFF;
+        width: auto;
+        height: 40%;
+        margin: 0;
+    }
+
+    .titlebloc1 h2 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .titlebloc1 p {
+        width: auto;
+        height: auto;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 2.5vw;
+        font-weight: 100;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /*--------------------CONTAINER 1--------------------*/
+
+    .container1 {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 80vh;
+        background-color: #5CBBFF;
+    }
+
+    /*--------------------MAP LEAFLET--------------------*/
+
+    .maps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        height: 60vh;
+        margin: 20px;
+        margin-top: 100px;
+        background-color: #5CBBFF;
+        border-radius: 45px;
+    }
+
+    .maps h3 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*--------------------PAYMENT--------------------*/
+
+    .payment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        height: 60vh;
+        margin: 20px;
+        margin-top: 100px;
+        background-color: #5CBBFF;
+        border-radius: 45px;
+    }
+
+    .payment h3 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*--------------------PAYMENT SYSTEM--------------------*/
+
+    .paymentsystem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    /*--------------------MONTANT--------------------*/
+
+    .boutonmontant {
+        width: 60px;
+        height: 50px;
+        background-color: #5CBBFF;
+        border: none;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 1.2vw;
+        color: white;
+        transition: 0.5s ease;
+    }
+
+    .boutonmontant.selected {
+        background-color: #0076ca;
+        color: white;
+        transform: scale(1.1);
+    }
+
+    .boutonmontant:hover {
+        background-color: #0076ca;
+        transform: scale(1.1);
+    }
+
+    /*--------------------NUMERO CB--------------------*/
+
+    .numerocb input {
+        width: 390px;
+        height: 40px;
+        background-color: #e6e6e6;
+        color: #808080;
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    /*--------------------EXP AND CVV--------------------*/
+
+    .expandcvv input {
+        width: 182px;
+        height: 40px;
+        background-color: #e6e6e6;
+        color: #808080;
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    /*--------------------PRENOM ET NOM--------------------*/
+
+    .name input {
+        width: 390px;
+        height: 40px;
+        background-color: #e6e6e6;
+        color: #808080;
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    /*--------------------BOUTON DON--------------------*/
+
+    .valider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 200px;
+        height: 50px;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.4vw;
+        margin: 10px;
+        background-color: #5CBBFF;
+        color: white;
+        border: none;
+        border-radius: 90px;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    
+    .valider:hover {
+        background-color: #0076ca;
+        transform: scale(1.1);
+    }
+    
+    .valider .buttontext {
+        display: inline-block;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .valider .buttontext.hidden {
+        opacity: 0;
+    }
+
+    .valider i {
+        font-size: 1.5vw;
+        display: none;
+    }
+    
+    .valider .spinner {
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /*--------------------IMAGE CB--------------------*/
+
+    .imagecb img {
+        width: 50px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    /*--------------------FOOTER--------------------*/
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+        background-color: #24a4ff;
+    }
+
+    /*--------------------BLOC 1 FOOTER (GAUCHE)--------------------*/
+
+    .bloc1 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        margin: 0 10px;
+        align-items: center;
+    }
+
+    .bloc1 a {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.4vw;
+        text-decoration: none;
+        margin: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+    /*--------------------BLOC 2 FOOTER (CENTRE)--------------------*/
+
+    .bloc2 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        margin: 0 10px;
+        align-items: center;
+    }
+
+    .bloc2 img {
+        width: 30%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    /*--------------------BLOC 3 FOOTER (DROITE)--------------------*/
+
+    .bloc3 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        align-items: center;
+    }
+
+    .bloc3 p {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.5vw;
+        margin: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+}

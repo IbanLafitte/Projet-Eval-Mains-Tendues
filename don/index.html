@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mains Tendues - Don</title>
+</head>
+
+<body>
+
+    <!--------------------ACCUEIL-------------------->
+
+    <!--Barre de navigation-->
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <img src="../img/logo.png" href="#" alt="logo">
+                <a href="../index.html">Accueil</a>
+                <a href="#">Don</a>
+                <a href="../contact/index.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Accueil-->
+
+    <div class="accueil">
+        <div class="textblock">
+            <h1>Mains<br>Tendues</h1>
+        </div>
+    </div>
+
+    <!--------------------TITRE-------------------->
+
+    <div class="titlebloc1">
+        <h2>Faites un don</h2>
+        <p>Dans notre point de collecte ou directement ici</p>
+    </div>
+
+    <!--Container 1-->
+
+    <div class="container1">
+
+    <!--Map Leaflet-->
+
+        <div class="maps">
+            <h3>Point de collecte</h3>
+            <div id="map" style="width: 100%; height: 500px; border-radius: 20px;"></div>
+        </div>
+
+    <!--Don-->
+
+        <div class="payment">
+            <h3>Don financier</h3>
+            <div class="paymentsystem">
+                <div class="montant">
+                    <button class="boutonmontant" data-amount="10">1 €</button>
+                    <button class="boutonmontant" data-amount="20">5 €</button>
+                    <button class="boutonmontant" data-amount="50">10 €</button>
+                    <button class="boutonmontant" data-amount="100">20 €</button>
+                    <button class="boutonmontant" data-amount="200">50 €</button>
+                </div>
+                <div class="numerocb">
+                    <input id="number" placeholder="Numéro de carte bancaire" required>
+                </div>
+                <div class="expandcvv">
+                    <input id="date" placeholder="MM/AA" required>
+                    <input id="cvv" placeholder="CVV" required>
+                </div>
+                <div class="name">
+                    <input id="name" placeholder="Nom sur la carte">
+                </div>
+                <div id="boutonDon" class="valider">
+                    <i class="fa-solid fa-circle-notch icon spinner"></i>
+                    <span class="buttontext">Faire un don</span>
+                </div>
+                <div class="imagecb">
+                    <img src="../img/visa.png" alt="Logo Visa">
+                    <img src="../img/mastercard.png" alt="Logo Mastercard">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+        <div class="bloc1">
+            <a href="../index.html">Accueil</a>
+            <a href="#">Don</a>
+            <a href="../contact/index.html">Contact</a>
+        </div>
+        <div class="bloc2">
+            <img src="../img/logo.png" alt="logo">
+        </div>
+        <div class="bloc3">
+            <p>@mains_tendues<br>Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!--------------------SCRIPT-------------------->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
